@@ -2,8 +2,5 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "strictNullChecks": true
-  },
-  "files": [
-    "consts.ts"
-  ]
+  }
 }
