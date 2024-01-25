@@ -1,8 +1,9 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Button from '../components/widgets/Button.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '@fontsource/montserrat-alternates';
 ---
 
 <!doctype html>
@@ -12,8 +13,26 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<main>
-			<h1 class="font-open">MINH DE RIEN</h1>
+		<main class="m-3 grid grid-rows-2 text-navy">
+			<div class="grid grid-cols-3">
+				<h1 class="col-span-2 font-bold text-9xl flex justify-self-start items-center">MINH DE RIEN</h1>
+				<div></div>
+			</div>
+			<div class="grid grid-cols-3 justify-center py-12">
+				<h2 class="col-span-2 font-montserrat text-4xl flex items-center font-navy">
+					An Intimate Collection of Cherished Locations in Montreal
+				</h2>
+				<div>
+					<!-- <div class="w-1 h-5 bg-navy flex"></div> -->
+					<Button className="h-24 w-96" buttonName="EXPLORE" class="p-9"/>
+					<!-- <div class="w-1 h-5 bg-navy"></div> -->
+				</div>
+			</div>
 		</main>
 	</body>
 </html>
+<style>
+	body {
+		background-image: url('public/background.png');
+	}
+</style>
