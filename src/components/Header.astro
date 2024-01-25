@@ -1,8 +1,9 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
-import Instagram from './icons/Instagram.astro'
-import GitHub from './icons/Github.astro'
+import Instagram from './icons/Instagram.astro';
+import GitHub from './icons/Github.astro';
+import Magnifying from './icons/Magnifying.astro';
 ---
 
 <header class="sticky top-0 z-40">
@@ -20,23 +21,23 @@ import GitHub from './icons/Github.astro'
 					</a>
 				</div>
 				<div></div>
-				<div class="flex justify-center items-center">Search____________</div>
+				<div class="flex justify-center items-center">____________<Magnifying /></div>
 			</div>
 		</div>
 		<div class="border-b-2 border-navy">
 			<div class="grid grid-cols-3 items-center m-3">
-				<div class="flex justify-center items-center">
+				<div class="flex justify-center items-center text-navy">
 					<a href="/" class="mx-5"><span class="sr-only">Home</span>
 						Home
 					</a>
-					<a href="/" class="mx-5"><span class="sr-only">About</span>
+					<a href="/about" class="mx-5"><span class="sr-only">About</span>
 						About
 					</a>
 				</div>
 				<h1
 					class="flex justify-center text-sm font-semibold text-gray-900 sm:text-xl"
 				>
-					LOGO
+					MDR
 				</h1>
 				<div class="flex justify-center">
 					<a href="/" class="mx-5"><span class="sr-only">Dinning</span>

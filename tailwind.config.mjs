@@ -7,6 +7,9 @@ export default {
 				'navy': '#141E46'
 			}
 		},
+		fontFamily: {
+			'montserrat': '"Montserrat Alternates"',
+		}
 	},
 	plugins: [],
 }
