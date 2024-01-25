@@ -1,0 +1,17 @@
+---
+const { buttonName, className } = Astro.props;
+---
+
+<button 
+  class:list={["border-2 border-navy m-9 button-shadow text-4xl", 
+  "transition delay-150 hover:bg-navy hover:text-white",
+  className]}
+>
+  {buttonName}
+</button>
+<style>
+  .button-shadow {
+    box-shadow: 10px 10px;
+    color: #141E46;
+  }
+</style>
