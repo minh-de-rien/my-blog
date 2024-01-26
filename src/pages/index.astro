@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Button from '../components/widgets/Button.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '../styles/global.css'
 import '@fontsource/montserrat-alternates';
 ---
 
@@ -13,19 +14,19 @@ import '@fontsource/montserrat-alternates';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-		<main class="m-3 grid grid-rows-2 text-navy">
-			<div class="grid grid-cols-3">
-				<h1 class="col-span-2 font-bold text-9xl flex justify-self-start items-center">MINH DE RIEN</h1>
-				<div></div>
-			</div>
-			<div class="grid grid-cols-3 justify-center py-12">
-				<h2 class="col-span-2 font-montserrat text-4xl flex items-center font-navy">
-					An Intimate Collection of Cherished Locations in Montreal
+		<main class="md:mx-2xl m-3 grid grid-rows-2 justify-center items-center h-full w-full text-navy">
+			<h1 class:list={["font-bold sm:text-5xl md:text-6xl lg:text-6xl xl:text-10xl",
+				"flex justify-center items-center"]}
+			>MINH DE RIEN
+			</h1>
+			<div class="flex justify-around py-12 px-48">
+				<h2 class="font-montserrat text-navy text-5xl">
+					An <span class="font-bettins">Intimate</span> Collection of Cherished Locations in Montreal
 				</h2>
-				<div>
-					<!-- <div class="w-1 h-5 bg-navy flex"></div> -->
-					<Button className="h-24 w-96" buttonName="EXPLORE" class="p-9"/>
-					<!-- <div class="w-1 h-5 bg-navy"></div> -->
+				<div class="pl-20">
+					<!-- <div class=" bg-navy flex">|</div> -->
+					<Button className="h-24 w-96 text-4xl" buttonName="EXPLORE" />
+					<!-- <div class=" bg-navy">|</div> -->
 				</div>
 			</div>
 		</main>
@@ -33,6 +34,6 @@ import '@fontsource/montserrat-alternates';
 </html>
 <style>
 	body {
-		background-image: url('public/background.png');
+		background-image: url('../../../public/background.png');
 	}
 </style>
