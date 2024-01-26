@@ -1,31 +1,51 @@
 ---
 import Header from '../components/Header.astro'
 import '@fontsource/montserrat-alternates';
+import Coffee from '../../src/components/icons/Coffee.astro';
+import Restaurant from '../../src/components/icons/Restaurant.astro';
+import Boba from '../../src/components/icons/Boba.astro'
 ---
 
 <body>
 	<Header />
 	<main class="mx-16 my-20 text-navy">
 		<h1 class="font-bold text-5xl flex justify-center items-center">Minh de rien</h1>
-		<div class="px-72 pt-4 font-montserrat text-center">
-			<p>
-				Greetings! My name is Minh Ngoc Do. I am a Computer Engineering student currently 
+		<div class="px-72 pt-4 pb-2 font-montserrat text-center text-lg">
+			<p class="pb-2">
+				<span class="font-bettins text-2xl">G</span>reetings! My name is Minh Ngoc Do. I am a Computer Engineering student currently 
 				crafting her personalized blog. In addition to my technical pursuits, 
 				I'm an enthusiast of the written words.
 			</p>
-			<p>
-				Minh de rien will be my personal guide to leisure in and around the city of Montreal! 
+			<p class="pb-2">
+				<span class="font-bettins text-2xl">M</span>inh de rien will be my personal guide to leisure in and around the city of Montreal! 
 				This website is designed to be a casual destination for individuals seeking enjoyable 
 				activities that go beyond the typical tourist spots as well as recommendations for lovable 
 				restaurants and cafes. The website aims to enhance your leisure experience by providing 
 				informative articles, captivating visuals and insightful reviews.
 			</p>
-			<p>
-				At its core, Minh de Rien is a reflection of my personal journey through Montreal. 
+			<p class="pb-2">
+				<span class="font-bettins text-2xl">A</span>t its core, Minh de Rien is a reflection of my personal journey through Montreal. 
 				It serves as a digital journal, a living history of my adventures and discoveries 
 				in this dynamic city. Though ideally, it would also serve as a helping hand to fellow 
 				enthusiasts and explorers.
 			</p>
 		</div>
 		<hr class="w-48 h-1 mx-auto my-4 bg-navy border-0 rounded md:my-10">
+		<div class="flex flex-col justify-center items-center text-xl text-navy">
+			<h1 class="font-montserrat mb-4">MDR in 2024</h1>
+			<div class="flex flex-row justify-center text-lg">
+				<div class="flex flex-col items-center m-4">
+					<div class="w-24 h-24 bg-gray-300 rounded-full mb-3 flex justify-center items-center"><Boba /></div>
+					<p>DRUNK 12 BOBAs</p>
+				</div>
+				<div class="flex flex-col items-center m-4">
+					<div class="w-24 h-24 bg-gray-300 rounded-full mb-3 flex justify-center items-center"><Restaurant /></div>
+					<p>VISIT 3 RESTAURANTS</p>
+				</div>
+				<div class="flex flex-col items-center m-4">
+					<div class="w-24 h-24 bg-gray-300 rounded-full mb-3 flex justify-center items-center"><Coffee /></div>
+					<p>VISIT 2 CAFEs</p>
+				</div>
+			</div>
+		</div>
 	</main>
