@@ -162,7 +162,7 @@ hr {
 
 @font-face {
   font-family: Bettins;
-  src: url("/fonts/bettins-ywpem.ttf") format('TrueType');
+  src: url('/fonts/bettins-ywpem.ttf') format('TrueType');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
